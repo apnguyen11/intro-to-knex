@@ -5,7 +5,7 @@ exports.up = function(knex) {
         table.string('title')
         table.boolean('isFinished')
         table.integer('studentId')
-        table.foreign('studentId').references('Student.id')
+        table.foreign('studentId').references('Students.id')
     })
 };
 
